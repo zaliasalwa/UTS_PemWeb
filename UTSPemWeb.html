@@ -22,20 +22,28 @@
             border-radius: 10px;
         }
         .header {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
+            display: flex; /* Menggunakan flexbox untuk layout */
+            align-items: center; /* Memastikan foto dan informasi sejajar secara vertikal */
+            justify-content: center; /* Memusatkan konten dalam header */
+            margin-bottom: 20px;
         }
         .header img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
             border: 4px solid white;
+            margin-right: 20px; /* Jarak antara foto dan informasi */
         }
-        h1, h2 {
+        h1 {
             color: #333;
+        }
+        .contact {
+            margin-bottom: 20px;
+            text-align: left; /* Align text to left */
+        }
+        .contact a {
+            color: #333;
+            text-decoration: none;
         }
         .content {
             display: flex;
@@ -44,14 +52,6 @@
         }
         .left-column, .right-column {
             width: 48%;
-        }
-        .contact {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact a {
-            color: #333;
-            text-decoration: none;
         }
         .section {
             margin-bottom: 20px;
@@ -77,14 +77,12 @@
     <div class="container">
         <div class="header">
             <img src="your_photo.jpg" alt="Foto Anda">
-            <h1>Nama Lengkap Anda</h1>
-            <p>Deskripsi singkat tentang diri Anda. Misalnya: Seorang profesional IT dengan pengalaman lebih dari 3 tahun dalam pengembangan web dan aplikasi mobile.</p>
-        </div>
-
-        <div class="contact">
-            <p>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></p>
-            <p>No. WA: <a href="https://wa.me/1234567890">+62 1234567890</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/akunlinkedin">linkedin.com/in/akunlinkedin</a></p>
+            <div>
+                <h1>Nama Lengkap Anda</h1>
+                <p>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></p>
+                <p>No. WA: <a href="https://wa.me/1234567890">+62 1234567890</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/akunlinkedin">linkedin.com/in/akunlinkedin</a></p>
+            </div>
         </div>
 
         <div class="content">
