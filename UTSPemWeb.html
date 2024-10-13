@@ -18,12 +18,12 @@
             background: #fff;
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid #4CAF50; /* Border berwarna hijau */
+            border: 2px solid #4CAF50;
             border-radius: 10px;
         }
         .header {
             text-align: center;
-            background-color: #4CAF50; /* Background header hijau */
+            background-color: #4CAF50;
             color: white;
             padding: 20px;
             border-radius: 10px 10px 0 0;
@@ -32,13 +32,18 @@
             border-radius: 50%;
             width: 150px;
             height: 150px;
-            border: 4px solid white; /* Border putih di sekitar foto */
+            border: 4px solid white;
         }
         h1, h2 {
             color: #333;
         }
         .content {
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
+        }
+        .left-column, .right-column {
+            width: 48%;
         }
         .contact {
             text-align: center;
@@ -50,7 +55,7 @@
         }
         .section {
             margin-bottom: 20px;
-            border-bottom: 1px solid #ccc; /* Garis pembatas antar section */
+            border-bottom: 1px solid #ccc;
             padding-bottom: 10px;
         }
         .skills-list, .experience-list, .education-list, .org-list, .cert-list {
@@ -83,54 +88,60 @@
         </div>
 
         <div class="content">
-            <div class="section">
-                <h2 class="section-title">Kemampuan IT</h2>
-                <ul class="skills-list">
-                    <li>Pengembangan Web (HTML, CSS, JavaScript)</li>
-                    <li>Pemrograman Python dan Java</li>
-                    <li>Database (MySQL, MongoDB)</li>
-                    <li>Pengembangan Aplikasi Mobile (React Native, Flutter)</li>
-                </ul>
+            <!-- Kolom Kiri -->
+            <div class="left-column">
+                <div class="section">
+                    <h2 class="section-title">Kemampuan IT</h2>
+                    <ul class="skills-list">
+                        <li>Pengembangan Web (HTML, CSS, JavaScript)</li>
+                        <li>Pemrograman Python dan Java</li>
+                        <li>Database (MySQL, MongoDB)</li>
+                        <li>Pengembangan Aplikasi Mobile (React Native, Flutter)</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Pengalaman Kerja</h2>
+                    <ul class="experience-list">
+                        <li><strong>Perusahaan XYZ</strong> - Pengembang Web (Jan 2020 - Sekarang)</li>
+                        <li><strong>Perusahaan ABC</strong> - Magang di Bidang IT (Mei 2019 - Des 2019)</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Pengalaman Organisasi</h2>
+                    <ul class="org-list">
+                        <li>Anggota BEM - Divisi Teknologi (2018-2019)</li>
+                        <li>Volunteer di Komunitas IT Lokal (2020 - Sekarang)</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="section">
-                <h2 class="section-title">Kemampuan Bahasa</h2>
-                <ul class="skills-list">
-                    <li>Bahasa Indonesia (Lancar)</li>
-                    <li>Bahasa Inggris (Tingkat Menengah)</li>
-                </ul>
-            </div>
+            <!-- Kolom Kanan -->
+            <div class="right-column">
+                <div class="section">
+                    <h2 class="section-title">Kemampuan Bahasa</h2>
+                    <ul class="skills-list">
+                        <li>Bahasa Indonesia (Lancar)</li>
+                        <li>Bahasa Inggris (Tingkat Menengah)</li>
+                    </ul>
+                </div>
 
-            <div class="section">
-                <h2 class="section-title">Pengalaman Kerja</h2>
-                <ul class="experience-list">
-                    <li><strong>Perusahaan XYZ</strong> - Pengembang Web (Jan 2020 - Sekarang)</li>
-                    <li><strong>Perusahaan ABC</strong> - Magang di Bidang IT (Mei 2019 - Des 2019)</li>
-                </ul>
-            </div>
+                <div class="section">
+                    <h2 class="section-title">Riwayat Pendidikan</h2>
+                    <ul class="education-list">
+                        <li><strong>Universitas ABC</strong> - S1 Teknik Informatika (2016-2020)</li>
+                        <li><strong>SMK XYZ</strong> - Rekayasa Perangkat Lunak (2013-2016)</li>
+                    </ul>
+                </div>
 
-            <div class="section">
-                <h2 class="section-title">Pengalaman Organisasi</h2>
-                <ul class="org-list">
-                    <li>Anggota BEM - Divisi Teknologi (2018-2019)</li>
-                    <li>Volunteer di Komunitas IT Lokal (2020 - Sekarang)</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Riwayat Pendidikan</h2>
-                <ul class="education-list">
-                    <li><strong>Universitas ABC</strong> - S1 Teknik Informatika (2016-2020)</li>
-                    <li><strong>SMK XYZ</strong> - Rekayasa Perangkat Lunak (2013-2016)</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Sertifikasi</h2>
-                <ul class="cert-list">
-                    <li>Certified Web Developer (2021)</li>
-                    <li>Google IT Support Professional Certificate (2020)</li>
-                </ul>
+                <div class="section">
+                    <h2 class="section-title">Sertifikasi</h2>
+                    <ul class="cert-list">
+                        <li>Certified Web Developer (2021)</li>
+                        <li>Google IT Support Professional Certificate (2020)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
