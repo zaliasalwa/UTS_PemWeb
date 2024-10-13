@@ -22,9 +22,9 @@
             border-radius: 10px;
         }
         .header {
-            display: flex; /* Menggunakan flexbox untuk layout */
-            align-items: center; /* Memastikan foto dan informasi sejajar secara vertikal */
-            justify-content: center; /* Memusatkan konten dalam header */
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 20px;
         }
         .header img {
@@ -32,18 +32,25 @@
             width: 150px;
             height: 150px;
             border: 4px solid white;
-            margin-right: 20px; /* Jarak antara foto dan informasi */
+            margin-right: 20px;
         }
         h1 {
             color: #333;
         }
         .contact {
             margin-bottom: 20px;
-            text-align: left; /* Align text to left */
+            text-align: left;
         }
         .contact a {
             color: #333;
             text-decoration: none;
+        }
+        .description {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            background-color: #e8f5e9; /* Warna latar belakang deskripsi */
         }
         .content {
             display: flex;
@@ -82,6 +89,10 @@
                 <p>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></p>
                 <p>No. WA: <a href="https://wa.me/1234567890">+62 1234567890</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/akunlinkedin">linkedin.com/in/akunlinkedin</a></p>
+                <div class="description">
+                    <strong>Deskripsi:</strong>
+                    <p>Seorang profesional IT dengan pengalaman lebih dari 3 tahun dalam pengembangan web dan aplikasi mobile. Memiliki kemampuan komunikasi yang baik dan berpengalaman dalam bekerja di tim.</p>
+                </div>
             </div>
         </div>
 
