@@ -1,116 +1,123 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>CV dan Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nama Anda</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
+            width: 80%;
             margin: auto;
-            background: white;
+            background: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        header {
+        .header {
             text-align: center;
-            margin-bottom: 20px;
         }
-        header img {
+        .header img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
         }
-        h1, h2, h3 {
+        h1, h2 {
             color: #333;
         }
-        ul {
+        .content {
+            margin-top: 20px;
+        }
+        .contact {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact a {
+            color: #333;
+            text-decoration: none;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .skills-list, .experience-list, .education-list, .org-list, .cert-list {
             list-style-type: none;
             padding: 0;
         }
-        ul li {
-            margin: 5px 0;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
+        .skills-list li, .experience-list li, .education-list li, .org-list li, .cert-list li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <img src="your_photo.jpg" alt="Foto Anda">
+            <h1>Nama Lengkap Anda</h1>
+            <p>Deskripsi singkat tentang diri Anda. Misalnya: Seorang profesional IT dengan pengalaman lebih dari 3 tahun dalam pengembangan web dan aplikasi mobile.</p>
+        </div>
 
-<div class="container">
-    <header>
-        <img src="foto-profil.jpg" alt="Foto Profil">
-        <h1>Nama Lengkap Anda</h1>
-        <p>Deskripsi singkat tentang diri Anda. Misalnya, seorang IT Developer dengan pengalaman dalam pengembangan aplikasi web dan mobile, serta minat pada teknologi dan inovasi digital.</p>
-    </header>
+        <div class="contact">
+            <p>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></p>
+            <p>No. WA: <a href="https://wa.me/1234567890">+62 1234567890</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/akunlinkedin">linkedin.com/in/akunlinkedin</a></p>
+        </div>
 
-    <section id="kontak">
-        <h2>Kontak</h2>
-        <ul>
-            <li>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></li>
-            <li>No. WA: <a href="https://wa.me/628xxxxxxx">+62 8xxxxxxx</a></li>
-            <li>Akun LinkedIn: <a href="https://linkedin.com/in/akunlinkedin" target="_blank">linkedin.com/in/akunlinkedin</a></li>
-        </ul>
-    </section>
+        <div class="content">
+            <div class="section">
+                <h2>Kemampuan IT</h2>
+                <ul class="skills-list">
+                    <li>Pengembangan Web (HTML, CSS, JavaScript)</li>
+                    <li>Pemrograman Python dan Java</li>
+                    <li>Database (MySQL, MongoDB)</li>
+                    <li>Pengembangan Aplikasi Mobile (React Native, Flutter)</li>
+                </ul>
+            </div>
 
-    <section id="skills">
-        <h2>Kemampuan</h2>
-        <h3>IT</h3>
-        <ul>
-            <li>Pengembangan Web (HTML, CSS, JavaScript, PHP)</li>
-            <li>Pengembangan Aplikasi Mobile (React Native, Flutter)</li>
-            <li>Manajemen Basis Data (MySQL, MongoDB)</li>
-            <li>DevOps dan CI/CD</li>
-        </ul>
-        <h3>Bahasa</h3>
-        <ul>
-            <li>Bahasa Indonesia (Penutur Asli)</li>
-            <li>Bahasa Inggris (C1 - Advanced)</li>
-        </ul>
-    </section>
+            <div class="section">
+                <h2>Kemampuan Bahasa</h2>
+                <ul class="skills-list">
+                    <li>Bahasa Indonesia (Lancar)</li>
+                    <li>Bahasa Inggris (Tingkat Menengah)</li>
+                </ul>
+            </div>
 
-    <section id="pengalaman-kerja">
-        <h2>Pengalaman Kerja</h2>
-        <ul>
-            <li><strong>Software Developer</strong> di PT Teknologi XYZ (2021 - sekarang)</li>
-            <li><strong>Junior Web Developer</strong> di Startup ABC (2019 - 2021)</li>
-        </ul>
-    </section>
+            <div class="section">
+                <h2>Pengalaman Kerja</h2>
+                <ul class="experience-list">
+                    <li><strong>Perusahaan XYZ</strong> - Pengembang Web (Jan 2020 - Sekarang)</li>
+                    <li><strong>Perusahaan ABC</strong> - Magang di Bidang IT (Mei 2019 - Des 2019)</li>
+                </ul>
+            </div>
 
-    <section id="pengalaman-organisasi">
-        <h2>Pengalaman Organisasi</h2>
-        <ul>
-            <li>Ketua Departemen IT di Organisasi X (2018 - 2020)</li>
-            <li>Koordinator Tim Pengembangan Aplikasi Sosial (2021)</li>
-        </ul>
-    </section>
+            <div class="section">
+                <h2>Pengalaman Organisasi</h2>
+                <ul class="org-list">
+                    <li>Anggota BEM - Divisi Teknologi (2018-2019)</li>
+                    <li>Volunteer di Komunitas IT Lokal (2020 - Sekarang)</li>
+                </ul>
+            </div>
 
-    <section id="riwayat-pendidikan">
-        <h2>Riwayat Pendidikan</h2>
-        <ul>
-            <li><strong>Sarjana Teknik Informatika</strong>, Universitas Teknologi Indonesia (2015 - 2019)</li>
-        </ul>
-    </section>
+            <div class="section">
+                <h2>Riwayat Pendidikan</h2>
+                <ul class="education-list">
+                    <li><strong>Universitas ABC</strong> - S1 Teknik Informatika (2016-2020)</li>
+                    <li><strong>SMK XYZ</strong> - Rekayasa Perangkat Lunak (2013-2016)</li>
+                </ul>
+            </div>
 
-    <section id="sertifikasi">
-        <h2>Sertifikasi</h2>
-        <ul>
-            <li>Certified ScrumMaster (CSM) - 2022</li>
-            <li>Google Associate Android Developer - 2021</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Nama Anda</p>
-    </footer>
-</div>
-
+            <div class="section">
+                <h2>Sertifikasi</h2>
+                <ul class="cert-list">
+                    <li>Certified Web Developer (2021)</li>
+                    <li>Google IT Support Professional Certificate (2020)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
